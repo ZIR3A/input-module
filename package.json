@@ -8,10 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://gitlab.com/saran.baral/input-module.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "url": "git://gitlab.com//ZIR3A/input-module.git"
   },
   "scripts": {
     "dev": "vite",
