@@ -7,7 +7,7 @@ const BasicInput = (props) => {
     return (
         <div className="mt-0">
             <div className={`${className ? className : 'form-group mb-4'}`}>
-                {label && <label htmlFor={name}>{label} {required && <span className="text-danger">*</span>}</label>} from package
+                {label && <label htmlFor={name}>{label} {required && <span className="text-danger">*</span>}</label>}
                 {tooltip}
                 <input
                     className={`form-control ${className ? 'p-0' : ''} ${error && 'is-invalid'}`}

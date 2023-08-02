@@ -39,7 +39,7 @@ const BasicInput = props => {
     htmlFor: name
   }, label, " ", required && /*#__PURE__*/_react.default.createElement("span", {
     className: "text-danger"
-  }, "*")), " from package", tooltip, /*#__PURE__*/_react.default.createElement("input", _extends({
+  }, "*")), tooltip, /*#__PURE__*/_react.default.createElement("input", _extends({
     className: "form-control ".concat(className ? 'p-0' : '', " ").concat(error && 'is-invalid'),
     name: name,
     min: min,
