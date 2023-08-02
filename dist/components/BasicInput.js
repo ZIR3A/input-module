@@ -5,6 +5,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+var _react = _interopRequireDefault(require("react"));
 var _propTypes = _interopRequireDefault(require("prop-types"));
 const _excluded = ["name", "onChange", "label", "value", "error", "type", "disabled", "placeholder", "className", "min", "onFocus", "autoComplete", "required", "tooltip", "ref"];
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -30,15 +31,15 @@ const BasicInput = props => {
       ref
     } = props,
     others = _objectWithoutProperties(props, _excluded);
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     className: "mt-0"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "".concat(className ? className : 'form-group mb-4')
-  }, label && /*#__PURE__*/React.createElement("label", {
+  }, label && /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: name
-  }, label, " ", required && /*#__PURE__*/React.createElement("span", {
+  }, label, " ", required && /*#__PURE__*/_react.default.createElement("span", {
     className: "text-danger"
-  }, "*")), tooltip, /*#__PURE__*/React.createElement("input", _extends({
+  }, "*")), tooltip, /*#__PURE__*/_react.default.createElement("input", _extends({
     className: "form-control ".concat(className ? 'p-0' : '', " ").concat(error && 'is-invalid'),
     name: name,
     min: min,
@@ -52,7 +53,7 @@ const BasicInput = props => {
     autoComplete: autoComplete,
     placeholder: placeholder,
     ref: ref
-  }, others)), /*#__PURE__*/React.createElement("div", {
+  }, others)), /*#__PURE__*/_react.default.createElement("div", {
     id: "invalidBox",
     "data-testid": "invalidBox",
     className: "invalidBox",
@@ -60,7 +61,7 @@ const BasicInput = props => {
       minHeight: '24px',
       position: 'absolute'
     }
-  }, error && /*#__PURE__*/React.createElement("small", {
+  }, error && /*#__PURE__*/_react.default.createElement("small", {
     className: "text-danger"
   }, error))));
 };
